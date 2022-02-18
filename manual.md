@@ -115,4 +115,3 @@ getTime() : int
 startTimer(maxTime : int) : void
 pauseTimer(doPersist : boolean) : void
 stopTimer(doPersist : boolean) : void
-```
