@@ -1,47 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Example Project 3</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <link rel="shortcut icon" href="#">
+    <title>Intro</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <link rel="shortcut icon" href="#">
     <script src="src/SCORM_API_wrapper.js"></script>
-    <script src="src/button.js"></script>
+    <script src="src/api.js"></script>
+    <script src="src/box-complete.js"></script>
   </head>
   <body>
     <a-scene>
-      <a-assets>
-        <img id="wood" src="src/assets/woodframe1b-albedo.png">
-        <img id="wood-nrm" src="src/assets/woodframe1-normal2.png">
-        <img id="metal" src="src/assets/modern-metal-wall_albedo.png">
-        <img id="metal-nrm" src="src/assets/modern-metal-wall_normal-ogl.png">
-      </a-assets>
-
-      <a-sky color="#000000"></a-sky>
-
-      <a-box position="0 12.5 0" width="25" height="25" depth="25" color="#BBBBBB"
-              side="double" 
-              src="#metal" normal-map="#metal-nrm" normal-scale="1 -1" roughness="0.2"
-              repeat="6 6" normal-texture-repeat="6 6"></a-box>
-
-      <a-box id="boxId" position="0 0.5 -3" rotation="0 45 0" color="#232323"
-              src="#wood"></a-box>
-      
-      <!--
-        <a-camera look-controls-enabled wasd-controls-enabled position="0 0 3"></a-camera> 
-      -->
-
-      <a-camera position="0 1.6 3" look-controls="pointerLockEnabled: true;">
-        <a-entity 
-          cursor="fuse: false" 
-          position="0 0 -1" 
-          geometry="primitive:ring; radiusInner: 0.005; radiusOuter: 0.01"  
-          material="color: grey; shader: flat"></a-ring>
+      <a-camera camera="" look-controls="pointerLockEnabled: true"></a-camera>
+      <a-camera look-controls="pointerLockEnabled: true">
+        <a-cursor position="0 0 -1" geometry="primitive:circle; radius: 0.01" material="color: grey; shader: flat"></a-cursor>
       </a-camera>
 
-      <a-scene start-button>
-      </a-scene>
-    </a-scene>
+      <a-box id="box" position="1 0.5 -3" color="#232323"></a-box>
+      <a-scene complete-course position="1 1 1"></a-scene>
+      
 
+    </a-scene>
   </body>
 </html>
