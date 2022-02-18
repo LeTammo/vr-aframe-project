@@ -4,14 +4,14 @@ This project aims to simplify the usage of Scorm via a easy to use structure. It
 
 ## Table of contents
 
-* [1. Example](example)
-* [2. Using the API](using-the-api)
-  * [2.1 SCO Completion](sco-completion)
-  * [2.2 User information](user-information)
-  * [2.3 Objectives](objectives)
-  * [2.4 Custom Data](custom-data)
-  * [2.5 Comments](comments)
-  * [2.5 Timer](timer)
+* [1. Example](#example)
+* [2. Using the API](#using-the-api)
+  * [2.1 SCO Completion](#sco-completion)
+  * [2.2 User information](#user-information)
+  * [2.3 Objectives](#objectives)
+  * [2.4 Custom Data](#custom-data)
+  * [2.5 Comments](#comments)
+  * [2.5 Timer](#timer)
 
 ## Example
 
